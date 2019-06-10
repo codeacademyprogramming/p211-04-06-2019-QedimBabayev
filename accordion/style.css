@@ -1,0 +1,63 @@
+
+.wrapper{
+  height: 500px;
+  width: 1000px;
+  border: 1px solid grey;
+  padding: 10px;  
+
+}
+
+.accordion {
+  background-color: #eee;
+  margin: 2px 0px;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid grey;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.4s;
+
+}
+.active{
+  background-color: #007fff;
+  transition: all 0.3s;
+}
+
+
+
+.accordion:hover {
+  background-color: #ccc;
+}
+.active:hover{
+  background-color: #007fff;
+}
+.panel.active:hover{
+  background-color: white;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  height: 0;
+}
+.panel.active{
+  height: 45%;
+  border: 1px solid grey;
+
+}
+.accordion::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  margin-right: 5px;
+}
+.accordion.active::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  margin-right: 5px;
+  color: white;
+}

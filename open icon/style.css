@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  height: 5000px;
+}
+.container-fluid {
+  padding: 0;
+}
+
+.styleSwitcher {
+  background-color: #151719;
+  color: white;
+  width:250px;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+  
+}
+
+
+.activer .icon {
+  color: white;
+}
+.activer {
+  position: absolute;
+  top: 200px;
+  left: 100%;
+  background-color: #151719;
+  font-size: 1.2em;
+  padding: 10px;
+}
+.Switcher-wrapper {
+  padding: 8px 10px;
+  overflow: auto;
+  height: 100vh;
+ 
+}
+.styleSwitcher.active{
+    transform: translateX(0);
+   
+}
+
+.Switcher-wrapper h5 {
+  color: #999;
+  font-size: 13px;
+  margin: 10px 0px;
+}
+.main-text {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.inner-icon {
+  cursor: pointer;
+}
+.my-border {
+  margin: 15px 0px;
+}
+.my-btn {
+  padding: 3px 6px;
+  color: #999;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+.my-border .up {
+  background-color: white;
+}
+.down {
+  background-color: black;
+  color: white;
+}
+ .down:hover {
+  background-color: #151719;
+  color: white;
+}
+.seperator {
+  color: black;
+  border: 1px solid;
+  margin: 36px 0px;
+}
+.same .my-btn{
+    padding: 10px 6px;
+}
+
+
+.same {
+    text-align: center;
+
+}
+.second-btn{
+    margin-top: 15px;
+}
+.buttons{
+    margin-bottom: 50px;
+}
+
+
